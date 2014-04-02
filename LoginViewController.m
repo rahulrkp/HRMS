@@ -26,7 +26,7 @@
 {
     appDelegate.window.rootViewController=appDelegate.tabBarVC;
     appDelegate.tabBarVC.selectedIndex=0;
-
+    NSLog(@"Login");
 }
 
 - (void)viewDidLoad
