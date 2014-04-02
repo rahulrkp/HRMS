@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HotLDetailViewController.h"
 
 @interface HotListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *tableVHotList;
+    HotLDetailViewController *hotlistDetailVC;
 }
 @end

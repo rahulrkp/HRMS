@@ -25,6 +25,9 @@
 
 - (void)viewDidLoad
 {
+    UIColor * color = [UIColor colorWithRed:165/255.0f green:217/255.0f blue:235/255.0f alpha:1.0f];
+    self.view.backgroundColor=color;
+
     [super viewDidLoad];
     self.navigationItem.title=@"Cloudeeva";
 

@@ -9,8 +9,8 @@
 #import "HotListTableViewCell.h"
 
 @implementation HotListTableViewCell
-@synthesize nameLabel = _nameLabel;
-@synthesize btnImg = _btnImg;
+@synthesize nameLabel ;
+@synthesize btnImg;
 
 - (void)awakeFromNib
 {
@@ -21,6 +21,13 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
+        self.nameLabel=[[UILabel alloc]initWithFrame:CGRectMake(80, 0, 100, 50)];
+        self.nameLabel.text=@"";
+        [self addSubview:self.nameLabel];
+        self.btnImg=[UIButton buttonWithType:UIButtonTypeCustom];
+        self.btnImg.frame=CGRectMake(0, 05, 40, 40);
+        [self.btnImg addTarget:self action:@selector(BtnCheckAction:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:btnImg];
         [self.btnImg setBackgroundImage:[UIImage imageNamed:@"unchecked.png"] forState:UIControlStateNormal];
 
     }
@@ -33,7 +40,7 @@
 
     // Configure the view for the selected state
 }
--(IBAction)BtnCheckAction:(id)sender
+-(void)BtnCheckAction:(id)sender
 {
     UIButton *btn=(UIButton*)sender;
     if ([btn backgroundImageForState:UIControlStateNormal]==[UIImage imageNamed:@"checked.png"]) {

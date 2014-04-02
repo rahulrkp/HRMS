@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface HotListTableViewCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet UILabel *nameLabel;
-@property (nonatomic, weak) IBOutlet UIButton *btnImg;
--(IBAction)BtnCheckAction:(id)sender;
+@property (nonatomic, strong)  UILabel *nameLabel;
+@property (nonatomic, strong)  UIButton *btnImg;
+-(void)BtnCheckAction:(id)sender;
 @end

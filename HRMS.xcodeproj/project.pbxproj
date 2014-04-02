@@ -36,9 +36,15 @@
 		43113CBC18EA97BF00A081CA /* LogOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43113CBA18EA97BF00A081CA /* LogOutViewController.m */; };
 		43113CBD18EA97BF00A081CA /* LogOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43113CBB18EA97BF00A081CA /* LogOutViewController.xib */; };
 		43113CC118EA9CD500A081CA /* HotListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43113CBF18EA9CD500A081CA /* HotListTableViewCell.m */; };
-		43113CC218EA9CD500A081CA /* HotListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43113CC018EA9CD500A081CA /* HotListTableViewCell.xib */; };
 		43113CC418EA9DC800A081CA /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 43113CC318EA9DC800A081CA /* unchecked.png */; };
 		43113CC618EA9DD600A081CA /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 43113CC518EA9DD600A081CA /* checked.png */; };
+		43FFA53918EBE62E0012F57E /* HotLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FFA53718EBE62E0012F57E /* HotLDetailViewController.m */; };
+		43FFA53A18EBE62E0012F57E /* HotLDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FFA53818EBE62E0012F57E /* HotLDetailViewController.xib */; };
+		43FFA53C18EBF7FF0012F57E /* customer.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FFA53B18EBF7FF0012F57E /* customer.png */; };
+		43FFA53E18EC01660012F57E /* resume_template.doc in Resources */ = {isa = PBXBuildFile; fileRef = 43FFA53D18EC01660012F57E /* resume_template.doc */; };
+		43FFA54318EC03A10012F57E /* Home-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FFA54018EC03A10012F57E /* Home-icon.png */; };
+		43FFA54418EC03A10012F57E /* Logout-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FFA54118EC03A10012F57E /* Logout-icon.png */; };
+		43FFA54618EC04EA0012F57E /* contact-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FFA54518EC04EA0012F57E /* contact-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,9 +100,16 @@
 		43113CBB18EA97BF00A081CA /* LogOutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogOutViewController.xib; sourceTree = "<group>"; };
 		43113CBE18EA9CD500A081CA /* HotListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotListTableViewCell.h; sourceTree = "<group>"; };
 		43113CBF18EA9CD500A081CA /* HotListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotListTableViewCell.m; sourceTree = "<group>"; };
-		43113CC018EA9CD500A081CA /* HotListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotListTableViewCell.xib; sourceTree = "<group>"; };
 		43113CC318EA9DC800A081CA /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
 		43113CC518EA9DD600A081CA /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		43FFA53618EBE62E0012F57E /* HotLDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotLDetailViewController.h; sourceTree = "<group>"; };
+		43FFA53718EBE62E0012F57E /* HotLDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotLDetailViewController.m; sourceTree = "<group>"; };
+		43FFA53818EBE62E0012F57E /* HotLDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotLDetailViewController.xib; sourceTree = "<group>"; };
+		43FFA53B18EBF7FF0012F57E /* customer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customer.png; sourceTree = "<group>"; };
+		43FFA53D18EC01660012F57E /* resume_template.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = resume_template.doc; sourceTree = "<group>"; };
+		43FFA54018EC03A10012F57E /* Home-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-icon.png"; sourceTree = "<group>"; };
+		43FFA54118EC03A10012F57E /* Logout-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logout-icon.png"; sourceTree = "<group>"; };
+		43FFA54518EC04EA0012F57E /* contact-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +150,9 @@
 				430867A818E97C100002DD34 /* HotListViewController.xib */,
 				43113CBE18EA9CD500A081CA /* HotListTableViewCell.h */,
 				43113CBF18EA9CD500A081CA /* HotListTableViewCell.m */,
-				43113CC018EA9CD500A081CA /* HotListTableViewCell.xib */,
+				43FFA53618EBE62E0012F57E /* HotLDetailViewController.h */,
+				43FFA53718EBE62E0012F57E /* HotLDetailViewController.m */,
+				43FFA53818EBE62E0012F57E /* HotLDetailViewController.xib */,
 				430867AB18E97C470002DD34 /* InterviewsViewController.h */,
 				430867AC18E97C470002DD34 /* InterviewsViewController.m */,
 				430867AD18E97C470002DD34 /* InterviewsViewController.xib */,
@@ -224,7 +239,12 @@
 		43113CC718EA9DDF00A081CA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				43FFA54518EC04EA0012F57E /* contact-icon.png */,
+				43FFA54018EC03A10012F57E /* Home-icon.png */,
+				43FFA54118EC03A10012F57E /* Logout-icon.png */,
+				43FFA53D18EC01660012F57E /* resume_template.doc */,
 				43113CC318EA9DC800A081CA /* unchecked.png */,
+				43FFA53B18EBF7FF0012F57E /* customer.png */,
 				43113CC518EA9DD600A081CA /* checked.png */,
 			);
 			name = Images;
@@ -308,16 +328,21 @@
 				430867B918E97C810002DD34 /* ReportsViewController.xib in Resources */,
 				430867AF18E97C470002DD34 /* InterviewsViewController.xib in Resources */,
 				430867AA18E97C100002DD34 /* HotListViewController.xib in Resources */,
+				43FFA54418EC03A10012F57E /* Logout-icon.png in Resources */,
 				43113CC618EA9DD600A081CA /* checked.png in Resources */,
 				4308677818E97B5D0002DD34 /* InfoPlist.strings in Resources */,
 				430867BE18E97CF90002DD34 /* ContactsViewController.xib in Resources */,
 				4308678018E97B5D0002DD34 /* Images.xcassets in Resources */,
-				43113CC218EA9CD500A081CA /* HotListTableViewCell.xib in Resources */,
 				43113CBD18EA97BF00A081CA /* LogOutViewController.xib in Resources */,
 				430867A018E97BA10002DD34 /* LoginViewController.xib in Resources */,
 				430867A518E97BE80002DD34 /* HomeViewController.xib in Resources */,
 				43113CC418EA9DC800A081CA /* unchecked.png in Resources */,
+				43FFA53C18EBF7FF0012F57E /* customer.png in Resources */,
+				43FFA54618EC04EA0012F57E /* contact-icon.png in Resources */,
 				430867B418E97C690002DD34 /* SalesViewController.xib in Resources */,
+				43FFA53E18EC01660012F57E /* resume_template.doc in Resources */,
+				43FFA53A18EBE62E0012F57E /* HotLDetailViewController.xib in Resources */,
+				43FFA54318EC03A10012F57E /* Home-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +363,7 @@
 			files = (
 				430867B818E97C810002DD34 /* ReportsViewController.m in Sources */,
 				430867B318E97C690002DD34 /* SalesViewController.m in Sources */,
+				43FFA53918EBE62E0012F57E /* HotLDetailViewController.m in Sources */,
 				43113CBC18EA97BF00A081CA /* LogOutViewController.m in Sources */,
 				4308677E18E97B5D0002DD34 /* AppDelegate.m in Sources */,
 				4308677A18E97B5D0002DD34 /* main.m in Sources */,

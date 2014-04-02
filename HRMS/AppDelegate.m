@@ -19,6 +19,8 @@
     self.logOutVC=[[LogOutViewController alloc]init];
 
     self.navVCHome=[[UINavigationController alloc]initWithRootViewController:self.homeVC];
+    UIColor * color = [UIColor colorWithRed:50/255.0f green:134/255.0f blue:221/255.0f alpha:1.0f];
+    self.navVCHome.navigationBar.barTintColor= color;
     self.tabBarVC=[[UITabBarController alloc]init];
     self.tabBarVC.delegate=self;
     NSArray *arrViews=[[NSArray alloc]initWithObjects:self.navVCHome,self.contactsVC,self.logOutVC, nil];
@@ -26,6 +28,11 @@
     self.navVCHome.tabBarItem.title=@"Home";
     self.contactsVC.tabBarItem.title=@"Contacts";
     self.logOutVC.tabBarItem.title=@"Logout";
+
+    self.navVCHome.tabBarItem.image=[UIImage imageNamed:@"Home-icon.png"];
+    self.contactsVC.tabBarItem.image=[UIImage imageNamed:@"contact-icon.png"];
+    self.logOutVC.tabBarItem.image=[UIImage imageNamed:@"Logout-icon.png"];
+
     self.window.rootViewController=self.loginVC;
     self.tabBarVC.selectedIndex=0;
     // Override point for customization after application launch.

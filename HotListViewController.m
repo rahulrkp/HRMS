@@ -26,12 +26,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIColor * color = [UIColor colorWithRed:165/255.0f green:217/255.0f blue:235/255.0f alpha:1.0f];
+    self.view.backgroundColor=color;
+
     self.navigationItem.title=@"Hotlist";
-    tableVHotList=[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    tableVHotList=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-self.tabBarController.tabBar.frame.size.height-self.navigationController.navigationBar.frame.size.height) style:UITableViewStylePlain];
     tableVHotList.delegate=self;
     tableVHotList.dataSource=self;
     tableVHotList.rowHeight=50;
     [self.view addSubview:tableVHotList];
+    [tableVHotList registerClass:[HotListTableViewCell class] forCellReuseIdentifier:@"HotListTableViewCell"];
+    hotlistDetailVC=[[HotLDetailViewController alloc]initWithNibName:@"HotLDetailViewController" bundle:nil];
+
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -40,13 +46,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *simpleTableIdentifier = [NSString stringWithFormat:@"cell%d",indexPath.row];
-    
-    HotListTableViewCell *cell = (HotListTableViewCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    NSString *simpleTableIdentifier = @"HotListTableViewCell";
+   
+    HotListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier forIndexPath:indexPath];
+
     if (cell == nil)
     {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"HotListTableViewCell" owner:self options:nil];
-        cell = [nib objectAtIndex:0];
+        cell = [[HotListTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     
     cell.nameLabel.text = @"Consultant1";
@@ -55,6 +61,7 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [self.navigationController pushViewController:hotlistDetailVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
