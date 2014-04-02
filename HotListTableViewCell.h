@@ -11,5 +11,5 @@
 @interface HotListTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel *nameLabel;
 @property (nonatomic, weak) IBOutlet UIButton *btnImg;
-
+-(IBAction)BtnCheckAction:(id)sender;
 @end

@@ -39,8 +39,6 @@
 		43113CC218EA9CD500A081CA /* HotListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43113CC018EA9CD500A081CA /* HotListTableViewCell.xib */; };
 		43113CC418EA9DC800A081CA /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 43113CC318EA9DC800A081CA /* unchecked.png */; };
 		43113CC618EA9DD600A081CA /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 43113CC518EA9DD600A081CA /* checked.png */; };
-		43113CCB18EAB21800A081CA /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43113CC918EAB21800A081CA /* SimpleTableCell.m */; };
-		43113CCC18EAB21800A081CA /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43113CCA18EAB21800A081CA /* SimpleTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,9 +97,6 @@
 		43113CC018EA9CD500A081CA /* HotListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotListTableViewCell.xib; sourceTree = "<group>"; };
 		43113CC318EA9DC800A081CA /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
 		43113CC518EA9DD600A081CA /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
-		43113CC818EAB21800A081CA /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
-		43113CC918EAB21800A081CA /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
-		43113CCA18EAB21800A081CA /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +153,6 @@
 				43113CB918EA97BF00A081CA /* LogOutViewController.h */,
 				43113CBA18EA97BF00A081CA /* LogOutViewController.m */,
 				43113CBB18EA97BF00A081CA /* LogOutViewController.xib */,
-				43113CC818EAB21800A081CA /* SimpleTableCell.h */,
-				43113CC918EAB21800A081CA /* SimpleTableCell.m */,
-				43113CCA18EAB21800A081CA /* SimpleTableCell.xib */,
 				43113CC718EA9DDF00A081CA /* Images */,
 				4308677318E97B5D0002DD34 /* HRMS */,
 				4308678C18E97B5D0002DD34 /* HRMSTests */,
@@ -313,7 +305,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43113CCC18EAB21800A081CA /* SimpleTableCell.xib in Resources */,
 				430867B918E97C810002DD34 /* ReportsViewController.xib in Resources */,
 				430867AF18E97C470002DD34 /* InterviewsViewController.xib in Resources */,
 				430867AA18E97C100002DD34 /* HotListViewController.xib in Resources */,
@@ -347,7 +338,6 @@
 			files = (
 				430867B818E97C810002DD34 /* ReportsViewController.m in Sources */,
 				430867B318E97C690002DD34 /* SalesViewController.m in Sources */,
-				43113CCB18EAB21800A081CA /* SimpleTableCell.m in Sources */,
 				43113CBC18EA97BF00A081CA /* LogOutViewController.m in Sources */,
 				4308677E18E97B5D0002DD34 /* AppDelegate.m in Sources */,
 				4308677A18E97B5D0002DD34 /* main.m in Sources */,

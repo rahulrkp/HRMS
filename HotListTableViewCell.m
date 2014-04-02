@@ -21,6 +21,8 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
+        [self.btnImg setBackgroundImage:[UIImage imageNamed:@"unchecked.png"] forState:UIControlStateNormal];
+
     }
     return self;
 }
@@ -30,6 +32,18 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+-(IBAction)BtnCheckAction:(id)sender
+{
+    UIButton *btn=(UIButton*)sender;
+    if ([btn backgroundImageForState:UIControlStateNormal]==[UIImage imageNamed:@"checked.png"]) {
+        [btn setBackgroundImage:[UIImage imageNamed:@"unchecked.png"] forState:UIControlStateNormal];
+    }
+    else
+    {
+        [btn setBackgroundImage:[UIImage imageNamed:@"checked.png"] forState:UIControlStateNormal];
+
+    }
 }
 
 @end

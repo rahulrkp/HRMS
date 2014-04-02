@@ -7,7 +7,7 @@
 //
 
 #import "HotListViewController.h"
-#import "SimpleTableCell.h"
+#import "HotListTableViewCell.h"
 @interface HotListViewController ()
 
 @end
@@ -35,21 +35,22 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return 8;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *tableIdentifier = @"SimpleTableCell";
+    NSString *simpleTableIdentifier = [NSString stringWithFormat:@"cell%d",indexPath.row];
     
-    SimpleTableCell *cell = [tableView dequeueReusableCellWithIdentifier:tableIdentifier];
-    
-    if (cell == nil) {
-        cell = [[SimpleTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableIdentifier];
+    HotListTableViewCell *cell = (HotListTableViewCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"HotListTableViewCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
     
-    cell.nameLabel.text =@"ggggg";// [NSString stringWithFormat:@"Customer %d",indexPath.row];
-   // cell.textLabel.text=@"sdfsdf";
+    cell.nameLabel.text = @"Consultant1";
+    
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
