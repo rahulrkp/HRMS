@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SalesViewController : UIViewController
-
+@interface SalesViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+{
+    UITableView *tableVSales;
+}
 @end

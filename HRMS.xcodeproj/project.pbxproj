@@ -45,6 +45,7 @@
 		43FFA54318EC03A10012F57E /* Home-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FFA54018EC03A10012F57E /* Home-icon.png */; };
 		43FFA54418EC03A10012F57E /* Logout-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FFA54118EC03A10012F57E /* Logout-icon.png */; };
 		43FFA54618EC04EA0012F57E /* contact-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FFA54518EC04EA0012F57E /* contact-icon.png */; };
+		43FFA54818EC11280012F57E /* graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FFA54718EC11280012F57E /* graph.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		43FFA54018EC03A10012F57E /* Home-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-icon.png"; sourceTree = "<group>"; };
 		43FFA54118EC03A10012F57E /* Logout-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logout-icon.png"; sourceTree = "<group>"; };
 		43FFA54518EC04EA0012F57E /* contact-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact-icon.png"; sourceTree = "<group>"; };
+		43FFA54718EC11280012F57E /* graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graph.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				43FFA54518EC04EA0012F57E /* contact-icon.png */,
+				43FFA54718EC11280012F57E /* graph.png */,
 				43FFA54018EC03A10012F57E /* Home-icon.png */,
 				43FFA54118EC03A10012F57E /* Logout-icon.png */,
 				43FFA53D18EC01660012F57E /* resume_template.doc */,
@@ -325,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FFA54818EC11280012F57E /* graph.png in Resources */,
 				430867B918E97C810002DD34 /* ReportsViewController.xib in Resources */,
 				430867AF18E97C470002DD34 /* InterviewsViewController.xib in Resources */,
 				430867AA18E97C100002DD34 /* HotListViewController.xib in Resources */,

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ReportsViewController : UIViewController
+@interface ReportsViewController : UIViewController<UIDocumentInteractionControllerDelegate,UIWebViewDelegate>
+@property (nonatomic, strong) UIDocumentInteractionController *documentInteractionController;
 
 @end

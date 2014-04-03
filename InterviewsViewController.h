@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InterviewsViewController : UIViewController
-
+@interface InterviewsViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    UITableView *tableVInterV;
+}
 @end
