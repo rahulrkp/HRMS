@@ -22,5 +22,6 @@
 @property (strong, nonatomic) LogOutViewController *logOutVC;
 @property (strong, nonatomic) UITabBarController *tabBarVC;
 @property (strong, nonatomic) UINavigationController *navVCHome;
+@property (strong, nonatomic) UINavigationController *navVCContact;
 
 @end

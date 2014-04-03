@@ -24,11 +24,11 @@
         self.nameLabel=[[UILabel alloc]initWithFrame:CGRectMake(80, 0, 100, 50)];
         self.nameLabel.text=@"";
         [self addSubview:self.nameLabel];
-        self.btnImg=[UIButton buttonWithType:UIButtonTypeCustom];
-        self.btnImg.frame=CGRectMake(0, 05, 40, 40);
-        [self.btnImg addTarget:self action:@selector(BtnCheckAction:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:btnImg];
-        [self.btnImg setBackgroundImage:[UIImage imageNamed:@"unchecked.png"] forState:UIControlStateNormal];
+//        self.btnImg=[UIButton buttonWithType:UIButtonTypeCustom];
+//        self.btnImg.frame=CGRectMake(0, 05, 40, 40);
+//        [self.btnImg addTarget:self action:@selector(BtnCheckAction:) forControlEvents:UIControlEventTouchUpInside];
+//        [self addSubview:btnImg];
+//        [self.btnImg setBackgroundImage:[UIImage imageNamed:@"unchecked.png"] forState:UIControlStateNormal];
 
     }
     return self;

@@ -19,19 +19,27 @@
     self.logOutVC=[[LogOutViewController alloc]init];
 
     self.navVCHome=[[UINavigationController alloc]initWithRootViewController:self.homeVC];
+    self.navVCContact=[[UINavigationController alloc]initWithRootViewController:self.contactsVC];
     UIColor * color = [UIColor colorWithRed:50/255.0f green:134/255.0f blue:221/255.0f alpha:1.0f];
     self.navVCHome.navigationBar.barTintColor= color;
+    self.navVCContact.navigationBar.barTintColor= color;
     self.tabBarVC=[[UITabBarController alloc]init];
     self.tabBarVC.delegate=self;
-    NSArray *arrViews=[[NSArray alloc]initWithObjects:self.navVCHome,self.contactsVC,self.logOutVC, nil];
+    NSArray *arrViews=[[NSArray alloc]initWithObjects:self.navVCHome,self.navVCContact,self.logOutVC, nil];
     self.tabBarVC.viewControllers=arrViews;
+    
     self.navVCHome.tabBarItem.title=@"Home";
-    self.contactsVC.tabBarItem.title=@"Contacts";
+    self.navVCContact.tabBarItem.title=@"Contacts";
     self.logOutVC.tabBarItem.title=@"Logout";
 
     self.navVCHome.tabBarItem.image=[UIImage imageNamed:@"Home-icon.png"];
-    self.contactsVC.tabBarItem.image=[UIImage imageNamed:@"contact-icon.png"];
+    self.navVCContact.tabBarItem.image=[UIImage imageNamed:@"contact-icon.png"];
     self.logOutVC.tabBarItem.image=[UIImage imageNamed:@"Logout-icon.png"];
+
+    self.tabBarVC.tabBar.barTintColor= color;
+    self.tabBarVC.tabBar.tintColor= [UIColor whiteColor];
+    self.navVCContact.navigationBar.tintColor= [UIColor whiteColor];
+    self.navVCHome.navigationBar.tintColor= [UIColor whiteColor];
 
     self.window.rootViewController=self.loginVC;
     self.tabBarVC.selectedIndex=0;

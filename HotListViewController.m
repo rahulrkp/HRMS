@@ -33,6 +33,8 @@
     tableVHotList=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-self.tabBarController.tabBar.frame.size.height-self.navigationController.navigationBar.frame.size.height) style:UITableViewStylePlain];
     tableVHotList.delegate=self;
     tableVHotList.dataSource=self;
+    tableVHotList.separatorInset = UIEdgeInsetsZero;
+
     tableVHotList.rowHeight=50;
     [self.view addSubview:tableVHotList];
     [tableVHotList registerClass:[HotListTableViewCell class] forCellReuseIdentifier:@"HotListTableViewCell"];

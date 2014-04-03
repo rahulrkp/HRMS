@@ -32,6 +32,8 @@
     tableVInterV=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-self.tabBarController.tabBar.frame.size.height-self.navigationController.navigationBar.frame.size.height) style:UITableViewStylePlain];
     tableVInterV.delegate=self;
     tableVInterV.dataSource=self;
+    tableVInterV.separatorInset = UIEdgeInsetsZero;
+
     [self.view addSubview:tableVInterV];
 
     // Do any additional setup after loading the view from its nib.

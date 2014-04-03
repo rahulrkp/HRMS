@@ -38,6 +38,8 @@
     titleList=[[NSArray alloc]initWithObjects:@"Hotlist",@"Interviews",@"Sales Team",@"Reports", nil];
     tableVHome=[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     tableVHome.delegate=self;
+    tableVHome.separatorInset = UIEdgeInsetsZero;
+
     tableVHome.dataSource=self;
     [self.view addSubview:tableVHome];
     

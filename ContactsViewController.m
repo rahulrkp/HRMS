@@ -31,6 +31,8 @@
     tableVContact=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-self.tabBarController.tabBar.frame.size.height-self.navigationController.navigationBar.frame.size.height) style:UITableViewStylePlain];
     tableVContact.delegate=self;
     tableVContact.dataSource=self;
+    tableVContact.separatorInset = UIEdgeInsetsZero;
+
     [self.view addSubview:tableVContact];
     
     // Do any additional setup after loading the view from its nib.

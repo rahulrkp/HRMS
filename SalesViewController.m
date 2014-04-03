@@ -30,6 +30,8 @@
     self.view.backgroundColor=color;
     tableVSales=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-self.tabBarController.tabBar.frame.size.height-self.navigationController.navigationBar.frame.size.height) style:UITableViewStylePlain];
     tableVSales.delegate=self;
+    tableVSales.separatorInset = UIEdgeInsetsZero;
+
     tableVSales.dataSource=self;
     [self.view addSubview:tableVSales];
 }
