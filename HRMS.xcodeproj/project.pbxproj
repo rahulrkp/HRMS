@@ -164,45 +164,7 @@
 		4308676118E97B5D0002DD34 = {
 			isa = PBXGroup;
 			children = (
-				4366C24F18EEAD1600CC1FD4 /* CollectionViewController.h */,
-				4366C25018EEAD1600CC1FD4 /* CollectionViewController.m */,
-				4366C25118EEAD1600CC1FD4 /* CollectionViewController.xib */,
-				4366C25418EEAD6200CC1FD4 /* Cell.h */,
-				4366C25518EEAD6200CC1FD4 /* Cell.m */,
-				4366C25618EEAD6200CC1FD4 /* CollectionViewLayout.h */,
-				4366C25718EEAD6200CC1FD4 /* CollectionViewLayout.m */,
-				4308679C18E97BA10002DD34 /* LoginViewController.h */,
-				4308679D18E97BA10002DD34 /* LoginViewController.m */,
-				4308679E18E97BA10002DD34 /* LoginViewController.xib */,
-				430867A118E97BE80002DD34 /* HomeViewController.h */,
-				430867A218E97BE80002DD34 /* HomeViewController.m */,
-				430867A318E97BE80002DD34 /* HomeViewController.xib */,
-				430867A618E97C100002DD34 /* HotListViewController.h */,
-				430867A718E97C100002DD34 /* HotListViewController.m */,
-				430867A818E97C100002DD34 /* HotListViewController.xib */,
-				43113CBE18EA9CD500A081CA /* HotListTableViewCell.h */,
-				43113CBF18EA9CD500A081CA /* HotListTableViewCell.m */,
-				43FFA53618EBE62E0012F57E /* HotLDetailViewController.h */,
-				43FFA53718EBE62E0012F57E /* HotLDetailViewController.m */,
-				43FFA53818EBE62E0012F57E /* HotLDetailViewController.xib */,
-				430867AB18E97C470002DD34 /* InterviewsViewController.h */,
-				430867AC18E97C470002DD34 /* InterviewsViewController.m */,
-				430867AD18E97C470002DD34 /* InterviewsViewController.xib */,
-				430867B018E97C690002DD34 /* SalesViewController.h */,
-				430867B118E97C690002DD34 /* SalesViewController.m */,
-				430867B218E97C690002DD34 /* SalesViewController.xib */,
-				430867B518E97C810002DD34 /* ReportsViewController.h */,
-				430867B618E97C810002DD34 /* ReportsViewController.m */,
-				430867B718E97C810002DD34 /* ReportsViewController.xib */,
-				430867BA18E97CF90002DD34 /* ContactsViewController.h */,
-				430867BB18E97CF90002DD34 /* ContactsViewController.m */,
-				430867BC18E97CF90002DD34 /* ContactsViewController.xib */,
-				43113CB918EA97BF00A081CA /* LogOutViewController.h */,
-				43113CBA18EA97BF00A081CA /* LogOutViewController.m */,
-				43113CBB18EA97BF00A081CA /* LogOutViewController.xib */,
-				4366C23E18EE83AD00CC1FD4 /* ContactDetailViewController.h */,
-				4366C23F18EE83AD00CC1FD4 /* ContactDetailViewController.m */,
-				4366C24018EE83AD00CC1FD4 /* ContactDetailViewController.xib */,
+				4366C25A18EEBCA700CC1FD4 /* Sources */,
 				43113CC718EA9DDF00A081CA /* Images */,
 				4308677318E97B5D0002DD34 /* HRMS */,
 				4308678C18E97B5D0002DD34 /* HRMSTests */,
@@ -287,6 +249,60 @@
 				43FFA53B18EBF7FF0012F57E /* customer.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		4366C25A18EEBCA700CC1FD4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4366C25B18EEBCD500CC1FD4 /* ViewControllers */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		4366C25B18EEBCD500CC1FD4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4366C24F18EEAD1600CC1FD4 /* CollectionViewController.h */,
+				4366C25018EEAD1600CC1FD4 /* CollectionViewController.m */,
+				4366C25118EEAD1600CC1FD4 /* CollectionViewController.xib */,
+				4366C25418EEAD6200CC1FD4 /* Cell.h */,
+				4366C25518EEAD6200CC1FD4 /* Cell.m */,
+				4366C25618EEAD6200CC1FD4 /* CollectionViewLayout.h */,
+				4366C25718EEAD6200CC1FD4 /* CollectionViewLayout.m */,
+				4308679C18E97BA10002DD34 /* LoginViewController.h */,
+				4308679D18E97BA10002DD34 /* LoginViewController.m */,
+				4308679E18E97BA10002DD34 /* LoginViewController.xib */,
+				430867A118E97BE80002DD34 /* HomeViewController.h */,
+				430867A218E97BE80002DD34 /* HomeViewController.m */,
+				430867A318E97BE80002DD34 /* HomeViewController.xib */,
+				430867A618E97C100002DD34 /* HotListViewController.h */,
+				430867A718E97C100002DD34 /* HotListViewController.m */,
+				430867A818E97C100002DD34 /* HotListViewController.xib */,
+				43113CBE18EA9CD500A081CA /* HotListTableViewCell.h */,
+				43113CBF18EA9CD500A081CA /* HotListTableViewCell.m */,
+				43FFA53618EBE62E0012F57E /* HotLDetailViewController.h */,
+				43FFA53718EBE62E0012F57E /* HotLDetailViewController.m */,
+				43FFA53818EBE62E0012F57E /* HotLDetailViewController.xib */,
+				430867AB18E97C470002DD34 /* InterviewsViewController.h */,
+				430867AC18E97C470002DD34 /* InterviewsViewController.m */,
+				430867AD18E97C470002DD34 /* InterviewsViewController.xib */,
+				430867B018E97C690002DD34 /* SalesViewController.h */,
+				430867B118E97C690002DD34 /* SalesViewController.m */,
+				430867B218E97C690002DD34 /* SalesViewController.xib */,
+				430867B518E97C810002DD34 /* ReportsViewController.h */,
+				430867B618E97C810002DD34 /* ReportsViewController.m */,
+				430867B718E97C810002DD34 /* ReportsViewController.xib */,
+				430867BA18E97CF90002DD34 /* ContactsViewController.h */,
+				430867BB18E97CF90002DD34 /* ContactsViewController.m */,
+				430867BC18E97CF90002DD34 /* ContactsViewController.xib */,
+				43113CB918EA97BF00A081CA /* LogOutViewController.h */,
+				43113CBA18EA97BF00A081CA /* LogOutViewController.m */,
+				43113CBB18EA97BF00A081CA /* LogOutViewController.xib */,
+				4366C23E18EE83AD00CC1FD4 /* ContactDetailViewController.h */,
+				4366C23F18EE83AD00CC1FD4 /* ContactDetailViewController.m */,
+				4366C24018EE83AD00CC1FD4 /* ContactDetailViewController.xib */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

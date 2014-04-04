@@ -25,7 +25,7 @@
         self.nameLabel.text=@"";
         [self addSubview:self.nameLabel];
         self.btnImg=[UIButton buttonWithType:UIButtonTypeCustom];
-        self.btnImg.frame=CGRectMake(0, 05, 30, 30);
+        self.btnImg.frame=CGRectMake(0, 10, 30, 30);
         [self.btnImg addTarget:self action:@selector(BtnCheckAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:btnImg];
         [self.btnImg setBackgroundImage:[UIImage imageNamed:@"unchecked.png"] forState:UIControlStateNormal];
