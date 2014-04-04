@@ -58,20 +58,13 @@
     }
     
     cell.nameLabel.text = @"Consultant1";
-    cell.accessoryType=UITableViewCellAccessoryDetailDisclosureButton;
+    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    if (cell.accessoryType==UITableViewCellAccessoryCheckmark) {
-        cell.accessoryType=UITableViewCellAccessoryDetailDisclosureButton;
-    }
-    else
-    {
-        cell.accessoryType=UITableViewCellAccessoryCheckmark;
-    }
+    [self.navigationController pushViewController:hotlistDetailVC animated:YES];
 }
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {

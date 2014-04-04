@@ -29,10 +29,10 @@
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQI-DG-cyq">
-                    <rect key="frame" x="102" y="212" width="91" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQI-DG-cyq">
+                    <rect key="frame" x="64" y="212" width="158" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Sign In"/>
+                    <state key="normal" backgroundImage="login_button.png"/>
                     <connections>
                         <action selector="LoginAction:" destination="-1" eventType="touchUpInside" id="2Y4-bQ-Pxv"/>
                     </connections>
@@ -55,4 +55,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
+    <resources>
+        <image name="login_button.png" width="810" height="257"/>
+    </resources>
 </document>

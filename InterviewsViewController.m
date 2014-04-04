@@ -7,7 +7,7 @@
 //
 
 #import "InterviewsViewController.h"
-
+#import <QuartzCore/QuartzCore.h>
 @interface InterviewsViewController ()
 
 @end
@@ -32,6 +32,7 @@
     tableVInterV=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-self.tabBarController.tabBar.frame.size.height-self.navigationController.navigationBar.frame.size.height) style:UITableViewStylePlain];
     tableVInterV.delegate=self;
     tableVInterV.dataSource=self;
+    tableVInterV.rowHeight=100;
     tableVInterV.separatorInset = UIEdgeInsetsZero;
 
     [self.view addSubview:tableVInterV];
@@ -42,7 +43,12 @@
 {
     return 8;
 }
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    cell.backgroundColor = [UIColor clearColor];
 
+    cell.detailTextLabel.backgroundColor = [UIColor whiteColor];
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *simpleTableIdentifier = @"cell";
@@ -54,7 +60,16 @@
     }
     
     cell.textLabel.text = @"Rahul Patel";
-    cell.detailTextLabel.text = @"Interview Details";
+    cell.detailTextLabel.text = @" I would be really glad to meet Mt. xxxxx and Mr. yyyyyy in gurgaon office from 5:00 pm";
+    cell.detailTextLabel.numberOfLines=4;
+    cell.detailTextLabel.backgroundColor=[UIColor whiteColor];
+    cell.detailTextLabel.textAlignment=NSTextAlignmentLeft;
+    UIColor * color = [UIColor colorWithRed:165/255.0f green:217/255.0f blue:235/255.0f alpha:1.0f];
+    cell.contentView.backgroundColor=color;
+    cell.detailTextLabel.layer.cornerRadius=8;
+    [cell.detailTextLabel.layer setMasksToBounds:YES];
+    [cell.detailTextLabel.layer setBorderWidth:0.1];
+    //[cell.detailTextLabel.layer setBorderColor:[[UIColor darkGrayColor] CGColor]];
     //cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }

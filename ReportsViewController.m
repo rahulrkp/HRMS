@@ -52,17 +52,17 @@
 - (UIViewController *) documentInteractionControllerViewControllerForPreview: (UIDocumentInteractionController *) controller {
     return self;
 }
-//- (void)webViewDidFinishLoad:(UIWebView *)theWebView
-//{
-//    CGSize contentSize = theWebView.scrollView.contentSize;
-//    CGSize viewSize = self.view.bounds.size;
-//    
-//    float rw = viewSize.width / contentSize.width;
-//    
-//    theWebView.scrollView.minimumZoomScale = rw;
-//    theWebView.scrollView.maximumZoomScale = rw;
-//    theWebView.scrollView.zoomScale = rw;
-//}
+- (void)webViewDidFinishLoad:(UIWebView *)theWebView
+{
+    CGSize contentSize = theWebView.scrollView.contentSize;
+    CGSize viewSize = self.view.bounds.size;
+    
+    float rw = viewSize.width / contentSize.width;
+    
+    theWebView.scrollView.minimumZoomScale = rw;
+    theWebView.scrollView.maximumZoomScale = rw;
+    theWebView.scrollView.zoomScale = rw;
+}
 
 - (void)didReceiveMemoryWarning
 {

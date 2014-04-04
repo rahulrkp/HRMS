@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CollectionViewLayout.h"
 
 @implementation AppDelegate
 
@@ -14,11 +15,16 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.loginVC=[[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
-    self.homeVC=[[HomeViewController alloc]init];
+    self.navVCLogin=[[UINavigationController alloc]initWithRootViewController:self.loginVC];
+    
+    CollectionViewLayout *collectionViewLayout = [[CollectionViewLayout alloc] init];
+    self.collectionVC = [[CollectionViewController alloc] initWithCollectionViewLayout:collectionViewLayout];
+
+    
     self.contactsVC=[[ContactsViewController alloc]init];
     self.logOutVC=[[LogOutViewController alloc]init];
 
-    self.navVCHome=[[UINavigationController alloc]initWithRootViewController:self.homeVC];
+    self.navVCHome=[[UINavigationController alloc]initWithRootViewController:self.collectionVC];
     self.navVCContact=[[UINavigationController alloc]initWithRootViewController:self.contactsVC];
     UIColor * color = [UIColor colorWithRed:50/255.0f green:134/255.0f blue:221/255.0f alpha:1.0f];
     self.navVCHome.navigationBar.barTintColor= color;
@@ -36,12 +42,12 @@
     self.navVCContact.tabBarItem.image=[UIImage imageNamed:@"contact-icon.png"];
     self.logOutVC.tabBarItem.image=[UIImage imageNamed:@"Logout-icon.png"];
 
-    self.tabBarVC.tabBar.barTintColor= color;
-    self.tabBarVC.tabBar.tintColor= [UIColor whiteColor];
+//    self.tabBarVC.tabBar.barTintColor= color;
+//    self.tabBarVC.tabBar.tintColor= [UIColor whiteColor];
     self.navVCContact.navigationBar.tintColor= [UIColor whiteColor];
     self.navVCHome.navigationBar.tintColor= [UIColor whiteColor];
 
-    self.window.rootViewController=self.loginVC;
+    self.window.rootViewController=self.navVCLogin;
     self.tabBarVC.selectedIndex=0;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -51,7 +57,7 @@
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
     if (viewController==self.logOutVC) {
-        self.window.rootViewController=self.loginVC;
+        self.window.rootViewController=self.navVCLogin;
     }
 }
 

@@ -11,17 +11,19 @@
 #import "HomeViewController.h"
 #import "ContactsViewController.h"
 #import "LogOutViewController.h"
+#import "CollectionViewController.h"
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate,UITabBarControllerDelegate>
 {
     
 }
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) LoginViewController *loginVC;
-@property (strong, nonatomic) HomeViewController *homeVC;
+@property (strong, nonatomic) CollectionViewController *collectionVC;
 @property (strong, nonatomic) ContactsViewController *contactsVC;
 @property (strong, nonatomic) LogOutViewController *logOutVC;
 @property (strong, nonatomic) UITabBarController *tabBarVC;
 @property (strong, nonatomic) UINavigationController *navVCHome;
-@property (strong, nonatomic) UINavigationController *navVCContact;
+@property (strong, nonatomic) UINavigationController *navVCContact,*navVCLogin;
 
 @end

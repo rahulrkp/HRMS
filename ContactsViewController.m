@@ -7,7 +7,7 @@
 //
 
 #import "ContactsViewController.h"
-
+#import "ContactDetailViewController.h"
 @interface ContactsViewController ()
 
 @end
@@ -52,12 +52,14 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:simpleTableIdentifier];
     }
     
-    cell.textLabel.text = @"Rahul Patel";
-    //cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+    cell.textLabel.text = [NSString stringWithFormat:@"Contact %d",indexPath.row+1];
+    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    ContactDetailViewController *contactDetailVC=[[ContactDetailViewController alloc]initWithNibName:@"ContactDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:contactDetailVC animated:YES];
 }
 - (void)didReceiveMemoryWarning
 {

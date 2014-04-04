@@ -7,6 +7,7 @@
 //
 
 #import "SalesViewController.h"
+#import "ContactDetailViewController.h"
 
 @interface SalesViewController ()
 
@@ -51,11 +52,13 @@
     }
     
     cell.textLabel.text = @"Sales Team";
-    
+    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    ContactDetailViewController *contactDetailVC=[[ContactDetailViewController alloc]initWithNibName:@"ContactDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:contactDetailVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
