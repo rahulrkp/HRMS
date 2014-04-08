@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TouchDelegateForCell1 <NSObject>
+
+- (void)touchedTheCell:(UIButton *)button;
+
+@end
+
 @interface HotListTableViewCell : UITableViewCell
 @property (nonatomic, strong)  UILabel *nameLabel;
 @property (nonatomic, strong)  UIButton *btnImg;
--(void)BtnCheckAction:(id)sender;
+@property(nonatomic, assign)id<TouchDelegateForCell1> delegate; //defining the delegate
+
+-(void)BtnCheckAction:(UIButton*)sender;
 @end

@@ -11,6 +11,7 @@
 @implementation HotListTableViewCell
 @synthesize nameLabel ;
 @synthesize btnImg;
+@synthesize delegate; //synthesize the delegate
 
 - (void)awakeFromNib
 {
@@ -21,14 +22,14 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
-        self.nameLabel=[[UILabel alloc]initWithFrame:CGRectMake(80, 0, 100, 50)];
+        self.nameLabel=[[UILabel alloc]initWithFrame:CGRectMake(50, 0, 200, 50)];
         self.nameLabel.text=@"";
         [self addSubview:self.nameLabel];
         self.btnImg=[UIButton buttonWithType:UIButtonTypeCustom];
         self.btnImg.frame=CGRectMake(0, 10, 30, 30);
-        [self.btnImg addTarget:self action:@selector(BtnCheckAction:) forControlEvents:UIControlEventTouchUpInside];
+        //[self.btnImg addTarget:self action:@selector(BtnCheckAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:btnImg];
-        [self.btnImg setBackgroundImage:[UIImage imageNamed:@"unchecked.png"] forState:UIControlStateNormal];
+        //[self.btnImg setBackgroundImage:[UIImage imageNamed:@"unchecked.png"] forState:UIControlStateNormal];
 
     }
     return self;
@@ -40,17 +41,22 @@
 
     // Configure the view for the selected state
 }
--(void)BtnCheckAction:(id)sender
+-(void)BtnCheckAction:(UIButton*)sender
 {
-    UIButton *btn=(UIButton*)sender;
-    if ([btn backgroundImageForState:UIControlStateNormal]==[UIImage imageNamed:@"checked.png"]) {
-        [btn setBackgroundImage:[UIImage imageNamed:@"unchecked.png"] forState:UIControlStateNormal];
-    }
-    else
+    NSLog(@"sender=%@",sender);
+    if([self.delegate respondsToSelector:@selector(touchedTheCell:)])
     {
-        [btn setBackgroundImage:[UIImage imageNamed:@"checked.png"] forState:UIControlStateNormal];
-
+        [self.delegate touchedTheCell:sender]; //or u can send the whole cell itself
     }
+
+//    UIButton *btn=(UIButton*)sender;
+//    if ([btn backgroundImageForState:UIControlStateNormal]==[UIImage imageNamed:@"checked.png"]) {
+//        [btn setBackgroundImage:[UIImage imageNamed:@"unchecked.png"] forState:UIControlStateNormal];
+//    }
+//    else
+//    {
+//        [btn setBackgroundImage:[UIImage imageNamed:@"checked.png"] forState:UIControlStateNormal];
+//    }
 }
 
 @end

@@ -47,6 +47,8 @@
 		4366C25318EEAD1600CC1FD4 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4366C25118EEAD1600CC1FD4 /* CollectionViewController.xib */; };
 		4366C25818EEAD6200CC1FD4 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4366C25518EEAD6200CC1FD4 /* Cell.m */; };
 		4366C25918EEAD6200CC1FD4 /* CollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4366C25718EEAD6200CC1FD4 /* CollectionViewLayout.m */; };
+		43DF689518F3FB150098D75C /* mail-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43DF689418F3FB150098D75C /* mail-icon.png */; };
+		43DF689718F400370098D75C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF689618F400370098D75C /* MessageUI.framework */; };
 		43FFA53918EBE62E0012F57E /* HotLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FFA53718EBE62E0012F57E /* HotLDetailViewController.m */; };
 		43FFA53A18EBE62E0012F57E /* HotLDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FFA53818EBE62E0012F57E /* HotLDetailViewController.xib */; };
 		43FFA53C18EBF7FF0012F57E /* customer.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FFA53B18EBF7FF0012F57E /* customer.png */; };
@@ -125,6 +127,8 @@
 		4366C25518EEAD6200CC1FD4 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		4366C25618EEAD6200CC1FD4 /* CollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewLayout.h; sourceTree = "<group>"; };
 		4366C25718EEAD6200CC1FD4 /* CollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewLayout.m; sourceTree = "<group>"; };
+		43DF689418F3FB150098D75C /* mail-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail-icon.png"; sourceTree = "<group>"; };
+		43DF689618F400370098D75C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		43FFA53618EBE62E0012F57E /* HotLDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotLDetailViewController.h; sourceTree = "<group>"; };
 		43FFA53718EBE62E0012F57E /* HotLDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotLDetailViewController.m; sourceTree = "<group>"; };
 		43FFA53818EBE62E0012F57E /* HotLDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotLDetailViewController.xib; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43DF689718F400370098D75C /* MessageUI.framework in Frameworks */,
 				4366C24418EE9AD600CC1FD4 /* QuartzCore.framework in Frameworks */,
 				4308677018E97B5D0002DD34 /* CoreGraphics.framework in Frameworks */,
 				4308677218E97B5D0002DD34 /* UIKit.framework in Frameworks */,
@@ -185,6 +190,7 @@
 		4308676C18E97B5D0002DD34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43DF689618F400370098D75C /* MessageUI.framework */,
 				4366C24318EE9AD600CC1FD4 /* QuartzCore.framework */,
 				4308676D18E97B5D0002DD34 /* Foundation.framework */,
 				4308676F18E97B5D0002DD34 /* CoreGraphics.framework */,
@@ -237,6 +243,7 @@
 		43113CC718EA9DDF00A081CA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				43DF689418F3FB150098D75C /* mail-icon.png */,
 				4366C24D18EEA9C000CC1FD4 /* rectangleBtn.png */,
 				4366C24B18EEA7F400CC1FD4 /* login_button.png */,
 				43FFA54518EC04EA0012F57E /* contact-icon.png */,
@@ -380,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43DF689518F3FB150098D75C /* mail-icon.png in Resources */,
 				4366C24E18EEA9C000CC1FD4 /* rectangleBtn.png in Resources */,
 				43FFA54818EC11280012F57E /* graph.png in Resources */,
 				430867B918E97C810002DD34 /* ReportsViewController.xib in Resources */,

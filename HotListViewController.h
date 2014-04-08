@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "HotLDetailViewController.h"
+#import "HotListTableViewCell.h"
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface HotListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface HotListViewController : UIViewController<TouchDelegateForCell1,UITableViewDataSource,UITableViewDelegate,MFMailComposeViewControllerDelegate>
 {
     UITableView *tableVHotList;
     HotLDetailViewController *hotlistDetailVC;
+    NSMutableArray *arrCheckCells;
+    UIBarButtonItem *barButtonR;
+    UIButton *btnMail;
 }
 @end
